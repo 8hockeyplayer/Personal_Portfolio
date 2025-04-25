@@ -1,0 +1,107 @@
+/* style2.css */
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fbfc;
+    color: #333;
+  }
+  
+  .navbar {
+    background-color: #002B5B;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #002B5B;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  
+  .intro-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .project-description-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .image-side img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .text-side h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-side p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .action-button {
+    margin-top: 40px;
+    text-align: center;
+    }
+  
+  .btn {
+    background-color: #002B5B;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002B5B;
+    color: white;
+    margin-top: 60px;
+    font-size: 0.9rem;
+  }
+  
