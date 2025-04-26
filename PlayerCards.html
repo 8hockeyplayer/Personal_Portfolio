@@ -7,57 +7,8 @@
   <link rel="stylesheet" href="html5reset.css">
   <link rel="stylesheet" href="style2.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f9;
-      color: #333;
-    }
-    header {
-      background-color: #002B5B;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .intro {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .intro h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .intro p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    .tableau-embed {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-      padding: 10px;
-    }
-    footer {
-      background-color: #002B5B;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
-  </style>
 </head>
-<body>
+<body class = 'bcard'>
   <nav class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -65,7 +16,7 @@
       <li><a href="PlayerCards.html">Player Cards</a></li>
     </ul>
   </nav>
-  <header>
+  <header class = 'hcard'>
     <h1>NHL Player Cards</h1>
     <p>Interactive Insights on NHL Players</p>
   </header>
@@ -73,7 +24,9 @@
   <div class="container">
     <div class="intro">
       <h2>Explore the Player Cards</h2>
-      <p>Use the interactive Tableau dashboard below to explore advanced analytics, salary information, and performance breakdowns for NHL players.</p>
+      <p>Use the interactive Tableau dashboard below to explore advanced analytics, salary information, and performance breakdowns for NHL players. To use select the player you want to see from the dropdown menu and change the year to match their contract year. This will show their relevant stats and the value of their contract. <br> <br>
+      NOTE: The image and team icon will not change. This feature is currently under development.
+      </p>
     </div>
 
     <div class="tableau-embed">
@@ -120,7 +73,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer class = 'fcard'>
     &copy; 2025 Trevor Hogland. Built for hockey fans and analysts alike.
   </footer>
 </body>

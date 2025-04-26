@@ -28,9 +28,18 @@
       <div class="text-side">
         <h2>About This Project</h2>
         <p>
-          This project uses advanced analytics to provide detailed player cards for NHL skaters and goalies. 
-          These cards feature data visualizations, performance metrics, and salary comparisons, all in an easy-to-use format. 
-          Whether you're a fan, analyst, or someone curious about how players stack up, these cards offer valuable insights.
+          I used a XGBoost decision tree model that analyzed various
+          inputs to project a salary for every player. By projecting each
+          salary in terms of percentage of the salary cap, we were able
+          to account for increasing caps and inflation. These projections
+          were considered accurate if they fell within a 1% range from
+          the actual salary. Based on this metric, our model achieved an
+          accuracy of just over 83% (for more detail, see the graphs at
+          the top).</p>
+          <p>By putting this data into Tableau, we were able to create an
+          automated player card which displays the projected salary as
+          well as offensive and defensive ratings for each player.</p> 
+          <p>To read more about the project view the poster below.</p>
         </p>
       </div>
     </section>
