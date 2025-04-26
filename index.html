@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,199 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="html5reset.css">
+    <link rel="stylesheet" href="html5reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Trevor Hogland</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Trevor Hogland</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Trevor Hogland</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Trevor Hogland</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/MIT Me-modified.png" alt="Trevor Hogland profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Trevor Hogland</h1>
-        <p class="section__text__p2">Data Analyst</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Hogland_Sports_Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/trevorhogland'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/8hockeyplayer'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
         <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/MIT Me-modified.png" alt="Trevor Hogland profile picture" />
         </div>
-        <div class="about-details-container">
-          <div class="text-container">
-            <p id = "about_me_p">
-              Hello, my name is Trevor Hogland and I'm a rising Senior studying Information Analysis at the University of Michigan School of Information in Ann Arbor. I believe data is the future, and I'm passionate about uncovering and exploring trends across data. With experience in Python, SQL, Data Visualization, and Machine Learning, I'm equipped to apply my analytics skills to a variety of real-world problems. I'm a lifelone athlete and have grown my data skills through several sports analytics projects. These projects focused on free agency and player evaluation in the National Hockey League. When I'm not working hard at school, you're likely to see me on the golf course or playing hockey. 
-            </p>
-            <div class = 'tab_titles'>
-              <p class="tab_links active-link" onclick="opentab('skills')">
-                Skills <img src="assets/arrow.png" alt="arrow" class="arrow-icon">
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Trevor Hogland</h1>
+          <p class="section__text__p2">Data Analyst</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Hogland_Sports_Resume.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/trevorhogland'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/8hockeyplayer'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="text-container">
+              <p id="about_me_p">
+                Hello, my name is Trevor Hogland and I'm a rising Senior studying Information Analysis at the University of Michigan School of Information in Ann Arbor. I believe data is the future, and I'm passionate about uncovering and exploring trends across data. With experience in Python, SQL, Data Visualization, and Machine Learning, I'm equipped to apply my analytics skills to a variety of real-world problems. I'm a lifelong athlete and have grown my data skills through several sports analytics projects. These projects focused on free agency and player evaluation in the National Hockey League. When I'm not working hard at school, you're likely to see me on the golf course or playing hockey.
               </p>
-              <p class="tab_links" onclick="opentab('experience')">
-                Experience <img src="assets/arrow.png" alt="arrow" class="arrow-icon">
-              </p>
-              <p class="tab_links" onclick="opentab('education')">
-                Education <img src="assets/arrow.png" alt="arrow" class="arrow-icon">
-              </p>
-            </div>
-            <div class = 'tab_contents active-tab' id = 'skills'>
+              <div class="tab_titles">
+                <p class="tab_links active-link" onclick="opentab('skills')">
+                  Skills <img src="assets/arrow.png" alt="arrow" class="arrow-icon" />
+                </p>
+                <p class="tab_links" onclick="opentab('experience')">
+                  Experience <img src="assets/arrow.png" alt="arrow" class="arrow-icon" />
+                </p>
+                <p class="tab_links" onclick="opentab('education')">
+                  Education <img src="assets/arrow.png" alt="arrow" class="arrow-icon" />
+                </p>
+              </div>
+              <div class="tab_contents active-tab" id="skills">
                 <ul>
-                    <li><span>Python</span><br>Skilled in the use of Python data analysis tools and libraries including Pandas, Numpy, PyTorch, and XGBoost.</li>
-                    <li><span>SQL</span><br>Experience in both querying and building SQL databases</li>
-                    <li><span>Data Visualization</span><p>Skilled in the use of Python libraries such as Matplotlib and Seaborn to build high-quality data visualizations</p> <p>Additional experience using Tableau and similar software for personal projects</p></li>
-                    <li><span>Machine Learning</span><br>Well-versed in machine learning techniques through various classes and personal project experience</li>
+                  <li><span>Python</span><br />Skilled in the use of Python data analysis tools and libraries including Pandas, Numpy, PyTorch, and XGBoost.</li>
+                  <li><span>SQL</span><br />Experience in both querying and building SQL databases</li>
+                  <li><span>Data Visualization</span><br />
+                    <p>Skilled in the use of Python libraries such as Matplotlib and Seaborn to build high-quality data visualizations</p>
+                    <p>Additional experience using Tableau and similar software for personal projects</p>
+                  </li>
+                  <li><span>Machine Learning</span><br />Well-versed in machine learning techniques through various classes and personal project experience</li>
                 </ul>
-            </div>
-            <div class = 'tab_contents' id = 'experience'>
+              </div>
+              <div class="tab_contents" id="experience">
                 <ul>
-                    <li><span>Michigan Sports Analytics Society Co-President</span><br>Incoming Co-President and winner of the "Most Outstanding Project" award at the annual symposium in 2025</li>
-                    <li><span>Michigan Sport Business Association</span><br>Expanded understanding of essential business functions including marketing, finance, partnerships, and data
-                    analytics through case studies and discussions with senior executives from sports organizations such as the
-                    Detroit Tigers, Chelsea FC, Detroit Pistons, and DraftKings</li>
-                    <li><span>Wolverine Sports Analytics</span><br>Completed my first sports analytics project, where I designed a Python model to suggest free agency moves for each NHL team based on needs and cap space</li>
-                    <li><span>MIT Sloan Sports Analytics Conference</span><br>Attended the 2025 Sloan Sports Analytics Conference in Boston to learn how the sports industry uses analytics and network with a variety of industry professionals</li>
-                    <li><span>Olive Garden Server, Busser, and Certified Busser Trainer</span><br>Worked at Olive Garden for over 3 years, where I was consistently recognized for outstanding service, becoming a senior server and certified trainer for bussers </li>
+                  <li><span>Michigan Sports Analytics Society Co-President</span><br />Incoming Co-President and winner of the "Most Outstanding Project" award at the annual symposium in 2025</li>
+                  <li><span>Michigan Sport Business Association</span><br />Expanded understanding of essential business functions including marketing, finance, partnerships, and data analytics through case studies and discussions with senior executives from sports organizations such as the Detroit Tigers, Chelsea FC, Detroit Pistons, and DraftKings</li>
+                  <li><span>Wolverine Sports Analytics</span><br />Completed my first sports analytics project, where I designed a Python model to suggest free agency moves for each NHL team based on needs and cap space</li>
+                  <li><span>MIT Sloan Sports Analytics Conference</span><br />Attended the 2025 Sloan Sports Analytics Conference in Boston to learn how the sports industry uses analytics and network with a variety of industry professionals</li>
+                  <li><span>Olive Garden Server, Busser, and Certified Busser Trainer</span><br />Worked at Olive Garden for over 3 years, where I was consistently recognized for outstanding service, becoming a senior server and certified trainer for bussers</li>
                 </ul>
-            </div>
-            <div class = 'tab_contents' id = 'education'>
+              </div>
+              <div class="tab_contents" id="education">
                 <ul>
-                    <li><span>University of Michigan</span><br>Bachelors in Information Analysis - Expected Graduation May 2026</li>
-                    <li><span>Charyl Stockwell Preparatory Academy</span><br>High School Diploma</li>
+                  <li><span>University of Michigan</span><br />Bachelors in Information Analysis - Expected Graduation May 2026</li>
+                  <li><span>Charyl Stockwell Preparatory Academy</span><br />High School Diploma</li>
                 </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/WSA Winter 2025 Presentation (1).jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/WSA Winter 2025 Presentation (1).jpg" alt="Project 1" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">NHL Player Cards</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='./PlayerCardsIndex.html'">
+                  Project Page
+                </button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">NHL Player Cards</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./PlayerCardsIndex.html'"
-              >
-                Project Page
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/WSA Fall 2024 Presentation.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">NHL Free Agency Suggestions</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='assets/NHL Free Agency Suggestions.pdf'"
-              >
-                Presentation
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.wolverinesportsanalytics.com/projects/nhl-free-agency'"
-              >
-               Project Description
-              </button>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/WSA Fall 2024 Presentation.jpg" alt="Project 2" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">NHL Free Agency Suggestions</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='assets/NHL Free Agency Suggestions.pdf'">
+                  Presentation
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.wolverinesportsanalytics.com/projects/nhl-free-agency'">
+                  Project Description
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="contact">
+      </section>
+
+      <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-wrapper">
           <div class="contact-info-left">
             <div class="contact-info-container">
-              <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <p><a href="mailto:examplemail@gmail.com">trevh@umich.edu</a></p>
+              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+              <p><a href="mailto:trevh@umich.edu">trevh@umich.edu</a></p>
             </div>
             <div class="contact-info-container">
-              <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
+              <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
               <p><a href="https://linkedin.com/in/trevorhogland">LinkedIn</a></p>
             </div>
           </div>
-      
+
           <form class="contact-form-right" action="https://formspree.io/f/xjkwvqnb" method="POST">
             <input type="text" name="Name" id="names" placeholder="Your Name" required />
             <input type="email" name="email" id="in_email" placeholder="Your Email" required />
@@ -207,6 +182,8 @@
           </form>
         </div>
       </section>
+    </main>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -219,6 +196,7 @@
       </nav>
       <p>Copyright &#169; 2025 Trevor Hogland. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
