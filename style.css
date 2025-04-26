@@ -290,10 +290,11 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .details-container {
@@ -318,7 +319,7 @@ section {
 }
 .tab_titles{
     display: flex;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
 
 }
 .tab_links{
@@ -537,9 +538,6 @@ footer p {
     #profile,
     .section-container {
       display: block;
-    }
-    .arrow {
-      display: none;
     }
     section,
     .section-container {
